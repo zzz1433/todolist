@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Todo List</title>
+</head>
+<link rel="stylesheet" href="./root.css">
+<link rel="stylesheet" href="./styles.css">
+<body>
+  <div class="bg-pattern"></div>
+  <div class="todo-wrapper">
+    <div class="nav">
+      <ul>
+        <li><div class="about">关于我</div></li>
+        <li><div class="lang">中文</div></li>
+      </ul>
+    </div>
+    <div id="todo-app" class="todo-app">
+      <div class="container header">
+        <div class="todo-input">
+          <h1 class="title">
+            <div class="ani-vector">
+              <span>66</span>
+              <span>66</span>
+            </div>
+            <img src="./todo.svg" alt class="title-1">
+            
+            <div class="pendulums">
+              <div class="bar"></div>
+              <div class="motion">
+                <div class="string"></div>
+                <div class="weight"></div>
+              </div>
+            </div>
+          </h1>
+          
+        </div>
+
+      </div>
+      <div class="add-content-wrapper">
+        
+        <input class="add-content" id="new-todo" type="text" rows="3" placeholder="新增待办事项...">
+        <button class="btn-submit" id="submit-button" type="button">提交</button>
+        
+      </div>
+      <div class="container-main">
+      <div class="todo-list-box">
+        <div class="bar-message">
+          <input type="button" value="全部标未完成" class="btn-label-all-finish">
+          
+            <div class="bar-message-text">今日事今日毕，勿将今事待明日！</div>
+          
+        </div> 
+        
+          <ul class="empty-tips" id="todo-items">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <!-- <li>添加你的第一个待办事项</li> -->
+            
+          </ul>
+        
+      </div>
+      
+      <div class="footer-side-bar">
+          <div class="side-shortcut">
+            <div class="shortcut-switch">
+              <button id="openBtn" class="shortcut-title btn-common">开</button>
+    <button id="allBtn"  class="shortcut-name btn-common">全部</button>
+    <button id="completedBtn" class="hide btn-common">全部标为已完成</button>
+    <button id="outBtn" class="hide btn-common">导出</button>
+    <button id="clearAllBtn" class="hide btn-common">清除全部</button>
+    <button id="recycleBinBtn" class="hide btn-common">回收站</button>
+    <button id="importBtn" class="shortcut-in btn-common">导入(txt/json)</button>
+  
+            </div>
+          </div>
+      
+     
+      </div> 
+
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+ 
+ 
+
+</body>
+
+</html>
